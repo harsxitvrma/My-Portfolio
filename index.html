@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshit - Verma Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/gkk5pui.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;1,100;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google fonts and icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+
+      body {
+        background-color: rgb(23, 23, 23);
+        background: linear-gradient(to right, #434343, #000000);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        background-image: url(/about-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: black;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(186, 187, 193);
+        font-size: 1.02rem;
+      }
+
+      .left {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 2rem;
+      }
+
+      #menu {
+        display: none;
+      }
+
+      .left label {
+        display: none;
+      }
+
+      main hr {
+        border: 0;
+        background-color: antiquewhite;
+        height: 1.5px;
+        margin: 50px 85px;
+      }
+
+      footer {
+        background-color: whitesmoke;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .footer {
+        display: flex;
+        padding: 15px;
+        justify-content: space-evenly;
+        color: black;
+      }
+
+      .footer ul {
+        list-style: none;
+        margin: 23px 0px;
+      }
+
+      .footer ul li {
+        padding: 10px;
+      }
+
+      .footer-first {
+        width: 20vw;
+      }
+
+      .footer-second {
+        width: 20vw;
+      }
+
+      .footer .footer-second a {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: lighter;
+      }
+
+      .footer .footer-second a:hover {
+        font-weight: 400;
+      }
+
+      footer .footer-text-rights {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-image: url(/about-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .footer-text-rights a {
+        color: white;
+      }
+
+      .footer-text-rights ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .footer-text-rights ul li {
+        list-style: none;
+        width: 70px;
+      }
+
+      .footer-fourth {
+        align-items: top;
+      }
+
+      .footer-fourth .image-wrapper-footer img {
+        width: 15vw;
+        height: auto;
+
+      }
+
+      .social-media {
+        cursor: pointer;
+        border-radius: 50%;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .social-media:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 15px 6.5px rgba(255, 255, 255, 0.7);
+      }
+
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 115px 0;
+      }
+
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2.5rem;
+      }
+
+      .leftsection .buttons {
+        padding: 10px 0px;
+      }
+
+      .leftsection .btn {
+        font-size: 1.3rem;
+        padding: 25px;
+        width: auto;
+        margin: 5px 0px;
+        border: 2px;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .leftsection .btn:hover {
+        transform: scale(1.02);
+        color: white;
+        background-color: black;
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+      }
+
+      .rightsection img {
+        width: 120%;
+        border-radius: 50px;
+        margin: 0px -28px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .rightsection img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+      }
+
+      .plakato {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 4rem;
+      }
+
+      .black-plakato {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 2rem;
+        color: black;
+      }
+
+      .text-gray {
+        color: rgb(196, 201, 201);
+      }
+
+      #element {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 4rem;
+      }
+
+      #element-2 {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 3rem;
+      }
+
+      #element-3 {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 3rem;
+      }
+
+      .secondsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 110px 10px;
+        max-width: 96vw;
+        height: auto;
+      }
+
+      .aboutleftsection {
+        width: 33%;
+        margin: 23px;
+        padding: 20px;
+      }
+
+      .aboutleftsection img {
+        width: 88%;
+        margin: -35px 28px;
+        border-radius: 50px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .aboutleftsection img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+      }
+
+      .aboutrightsection {
+        width: 110%;
+      }
+
+      .secondsection h1 {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 3rem;
+        font-weight: normal;
+      }
+
+      .secondsection p {
+        font-size: 1.5rem;
+      }
+
+      .thirdsection {
+        text-align: center;
+        align-items: center;
+        margin: 115px 50px 140px;
+        height: auto;
+      }
+
+      .thirdsection h1 {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 3rem;
+        font-weight: normal;
+      }
+
+      .projectsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 38px 0px;
+      }
+
+      .projectsection hr {
+        border: 0;
+        background-color: rgb(247, 241, 241);
+        height: 1.5px;
+        margin: 9px 23px;
+        box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+      }
+
+      .projectsection a {
+        color: white;
+      }
+
+      .projectsection ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .projectsection ul li {
+        list-style: none;
+      }
+
+      .left-project-section {
+        background-color: white;
+        box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+        width: 30%;
+        height: 40vw;
+        border-radius: 20px;
+        background-image: url(/30\ Building\ Drawing\ Ideas\ That\ You\ Needs\ to\ Try!\ 39.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .left-project-section:hover .project-content {
+        opacity: 1;
+      }
+
+      .left-project-section:hover .overlay {
+        opacity: 1;
+      }
+
+      .middle-project-section {
+        background-color: white;
+        box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+        width: 30%;
+        height: 40vw;
+        border-radius: 20px;
+        background-image: url(/30x\ Outrageously\ Creative_\ Weird\ Drawing\ Ideas\ 2024!\ 82.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .middle-project-section:hover .project-content {
+        opacity: 1;
+      }
+
+      .middle-project-section:hover .overlay {
+        opacity: 1;
+      }
+
+      .right-project-section {
+        background-color: white;
+        box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+        width: 30%;
+        height: 40vw;
+        border-radius: 20px;
+        background-image: url(/地圖肖像Map\ Portrait\ no_00514.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .right-project-section:hover .project-content {
+        opacity: 1;
+      }
+      .right-project-section:hover .overlay {
+        opacity: 1;
+      }
+
+      .project-content {
+        color: white;
+        padding: 20px;
+        font-size: clamp(12px, 2.5vw, 18px);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        word-wrap: break-word;
+        text-align: center;
+      }
+
+      .project-content h2 {
+        font-family: "plakato-pro", sans-serif;
+        font-weight: normal;
+        font-size: 2rem;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        border-radius: 20px;
+        height: 40vw;
+      }
+
+      .designsection {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 38px 0px;
+      }
+
+      .design-row1{
+        display: flex;
+        margin: 10px;
+      }
+
+      .design-row2 {
+        display: flex;
+        margin: 10px;
+      }
+
+      .designsection div img {
+        width: 150px;
+        height: auto;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 10px;
+        transition: transform 0.1s ease, box-shadow 0.2s ease;
+      }
+
+      .designsection div img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+      }
+
+      .plakato-inline {
+        font-family: "plakato-inline-pro", sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+        font-style: normal;
+      }
+
+      .fourthsection {
+        text-align: center;
+        margin: 115px;
+      }
+
+      .fourthsection h1 {
+        font-family: "plakato-pro", sans-serif;
+        font-size: 3rem;
+        font-weight: normal;
+      }
+
+      .contactsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 25px;
+        height: auto;
+      }
+
+      .contactsection h1 {
+        font-family: "plakato-inline-pro", sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+        font-style: normal;
+      }
+
+      .contactsection hr {
+        border: none;
+        height: 6px;
+        background: white;
+        width: 137px;
+        margin: -10px 0px 10px;
+        border-radius: 10px;
+      }
+
+      .contactsection textarea {
+        font-family: "Poppins", sans-serif;
+        height: 140px;
+        border-radius: 20px;
+        padding-top: 15px;
+      }
+
+      .overlay-2 {
+        background: rgba(128, 128, 128, 0.37);
+        box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+        border-radius: 20px;
+        width: fit-content;
+        margin: 0px 50px;
+        padding: 23px;
+      }
+
+      .contactsection .contact-form-left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+      }
+
+      .contact-input {
+        width: 400px;
+        height: 60px;
+        border: none;
+        outline: none;
+        color: rgb(58, 58, 58);
+        border-radius: 50px;
+        padding-left: 25px;
+        font-weight: 500;
+        font-size: medium;
+      }
+
+      .contact-input:focus {
+        border: 2px solid rgb(255, 255, 255);
+        background: black;
+        color: white;
+      }
+
+      .contact-input::placeholder {
+        color: rgb(158, 153, 153);
+        font-size: medium;
+      }
+
+      .contact-form-left button {
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 550;
+        color: black;
+        background: white;
+        border-radius: 50px;
+        border: none;
+        gap: 10px;
+        cursor: pointer;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .contact-form-left button:hover {
+        transform: scale(1.02);
+        color: white;
+        background-color: black;
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+      }
+
+      .contact-form-left img {
+        height: 30px;
+      }
+
+      .contact-form-right {
+        width: 40vw;
+        height: auto;
+        text-align: left;
+        align-items: center;
+      }
+
+      @media screen and (max-width: 765px) {
+
+        nav {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+        }
+
+        nav .left{
+          display: flex;
+          justify-content: space-between;
+          width: 95%;
+          margin-top: 15px;
+          margin-bottom: 20px;
+        }
+
+        nav .left label {
+          display: block;
+          cursor: pointer;
+          position: relative;
+          width: 30px;
+          height: 30px;
+        }
+
+        nav .left label::before {
+          flex-direction: row;
+          position: absolute;
+          content: "menu";
+          font-family: "Material Icons";
+          top: 0;
+          left: 0;
+          font-size: 30px;
+        }
+
+
+        nav ul {
+          width: 100%;
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+          align-items: center;
+          max-height:0;
+          overflow: hidden;
+          transition: 0.5s ease-in-out;
+        }
+
+        nav ul li {
+          width: 500%;
+          padding: 10px;
+          border-radius: 0;
+          border-top: 0.1rem solid rgba(255, 255, 255, 0.695);
+        }
+
+        #menu:checked ~ .right ul{
+          max-height: 500px;
+        }
+        #menu:checked ~ .left label::before {
+          content: "close";
+        }
+
+        
+        .thirdsection .projectsection {
+          display: inline;
+        }
+
+        .left-project-section {
+          width: fit-content;
+          margin: 23px;
+        }
+
+        .right-project-section {
+          width: fit-content;
+          margin: 23px;
+        }
+
+        .middle-project-section {
+          width: fit-content;
+          margin: 23px;
+        }
+
+        .overlay {
+          overflow: scroll;
+        }
+
+        .contactsection {
+          margin: 23px 78px;
+        }
+
+        .overlay-2 {
+          width: 80vw;
+          margin: 0px -200px;
+          align-items: center;
+        }
+
+        .contact-input {
+          width: 75vw;
+        }
+
+        .contact-form-right {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 1199px) {
+        .overlay {
+          overflow: scroll;
+        }
+
+        .designsection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0px 0px 0px -23px;
+        }
+
+        .design-row1 {
+          display: flex;
+        }
+
+        .design-row2 {
+          display: flex;
+        }
+
+        .designsection div img {
+          width: 90%;
+          height: 80%;
+          margin: 23px;
+        }
+
+        .aboutrightsection {
+          width: fit-content;
+          height: auto;
+          padding: 10vw;
+        }
+
+        .aboutleftsection {
+          display: none;
+        }
+        .aboutleftsection img {
+          opacity: 0;
+        }
+
+        .firstsection {
+          display: inline;
+        }
+
+        .leftsection {
+          margin: 80px;
+          width: max-content;
+        }
+
+        .rightsection {
+          display: none;
+        }
+
+        .leftsection .buttons {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 200px;
+        }
+
+        .leftsection .buttons .btn {
+          margin: 10px;
+        }
+
+        .footer {
+          display: flex;
+          justify-content: space-between;
+          overflow: hidden;
+        }
+
+        .footer-first {
+          width: auto;
+        }
+        
+
+        .footer .footer-second {
+          display: none;
+        }
+
+        .footer-third {
+          width: auto;
+          margin-right: 20px;
+        }
+
+        .footer .footer-fourth {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" name="" id="menu" />
+        <div class="left">Harshit's Portfolio
+          <label for="menu"></label>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection" id="Home">
+        <div class="leftsection">
+          <div class="text-gray">Hi, My name is</div>
+          <span class="plakato">Harshit</span>
+          <div class="text-gray">I am a creative</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn" onclick="window.location.href='/'">
+              <i class="fa fa-download"></i>Resume
+            </button>
+            <button
+              class="btn"
+              onclick="window.location.href='https://github.com/harsxitvrma'"
+            >
+              <i class="fa fa-github"></i>Github
+            </button>
+          </div>
+        </div>
+        <div class="rightsection"><img src="A man drinks coffee.jpeg" /></div>
+      </section>
+      <hr />
+      <section class="secondsection" id="About">
+        <div class="aboutleftsection">
+          <img src="/download (17).jpeg" alt="" />
+        </div>
+        <div class="aboutrightsection">
+          <span class="plakato-inline">Get to know me</span>
+          <h1>About</h1>
+          <p>
+            <br />
+            Hey! I'm Harshit Verma, a second-year B.Tech CSE student with a
+            growing passion for both technology and design.
+
+            <br />I’m currently exploring the world of web development, learning
+            how to build responsive and functional websites using modern tools
+            and frameworks. I'm also diving into areas like AI integration and
+            problem-solving with code — one step at a time.
+
+            <br />Alongside my tech journey, I’m actively involved in the
+            creative side of things. I design user interfaces, event posters,
+            and digital assets using tools like Figma, Canva Pro, and Adobe
+            Illustrator. I currently serve as the Graphics Head of the CSWD
+            society at my college, where I lead the visual design for various
+            events and campaigns.
+
+            <br />I love combining logic and creativity — and I’m always looking
+            for opportunities to learn, create, and grow.
+
+            <br /><br /><span id="element-2"></span>
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdsection" id="Projects">
+        <span class="plakato-inline">Crafted with Code & Creativity</span>
+        <h1>Projects</h1>
+        <section class="projectsection">
+          <div class="left-project-section">
+            <div class="overlay">
+              <div class="project-content">
+                <h2>EcoSnap AI – Smart Waste Classifier</h2>
+                <hr />
+                <span class="plakato-inline">Tech Stack: </span><br />
+                <p style="text-align: left">
+                  HTML, CSS, JavaScript, Flask (Python), Teachable Machine by
+                  Google
+                </p>
+                <span class="plakato-inline">Description</span><br /><br />
+                <p style="text-align: left">
+                  An AI-powered web application that classifies waste into
+                  biodegradable, recyclable, or hazardous using image
+                  recognition. Users get intelligent disposal suggestions and
+                  location-based recycling center recommendations. Built with a
+                  Figma-inspired design, EcoSnap AI combines functionality and
+                  awareness to promote eco-conscious actions.
+                </p>
+                <br />
+                <hr />
+                <span class="plakato-inline">Links</span><br />
+                <ul>
+                  <li>
+                    <a href="https://harsxitvrma.github.io/EcoSnap-AI/"
+                      >Ecosnap AI</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/harsxitvrma/EcoSnap-AI"
+                      >Github Repository</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="middle-project-section">
+            <div class="overlay">
+              <div class="project-content">
+                <h2>GreenPath – Sustainable Living Platform</h2>
+                <hr />
+                <span class="plakato-inline">Tech Stack: </span><br />
+                <p style="text-align: left">
+                  React.js, Node.js, MongoDB, Google Maps API (planned)
+                </p>
+                <span class="plakato-inline">Description</span><br /><br />
+                <p style="text-align: left">
+                  GreenPath is a long-term eco-tech initiative aiming to guide
+                  users toward a greener lifestyle. It will provide personalized
+                  sustainability tips, eco-habit tracking, and location-based
+                  services for eco-friendly resources. Built with scalability in
+                  mind, GreenPath combines clean UI, real-time insights, and
+                  community-driven features to promote environmental awareness.
+                </p>
+                <br />
+                <hr />
+                <span class="plakato-inline">Links</span><br />
+                <ul>
+                  <li>
+                    <a href="/" title="Work in progress">GreenPath</a>
+                  </li>
+                  <li>
+                    <a href="/" title="Work in progress">Github Repository</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-project-section">
+            <div class="overlay">
+              <div class="project-content">
+                <h2>MIET Event Calendar Website – Your Campus Event Hub</h2>
+                <hr />
+                <span class="plakato-inline">Tech Stack: </span><br />
+                <p style="text-align: left">
+                  HTML, CSS, JavaScript, PHP, MySQL
+                </p>
+                <span class="plakato-inline">Description</span><br /><br />
+                <p style="text-align: left">
+                  A dynamic event management website for MIET that centralizes
+                  all college events, workshops, and announcements. The site
+                  features an intuitive UI for students and an admin panel for
+                  easy event updates. Designed to enhance student engagement and
+                  improve campus-wide communication.
+                </p>
+                <br />
+                <hr />
+                <span class="plakato-inline">Links</span><br />
+                <ul>
+                  <li>
+                    <a href="https://miet-events-calendar.netlify.app/" title="Work in progress">Miet Event Calendar</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/harsxitvrma/Miet-Event-Calender"
+                      title="GitHub"
+                      >Github Repository</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h1>Designs</h1>
+        <section class="designsection" id="Designs">
+          <div class="design-row1">
+          <div>
+            <img
+              src="/desing1.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          <div>
+            <img
+              src="/desing1.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          <div>
+            <img
+              src="/desing2.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          <div>
+            <img
+              src="/desing2.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          </div>
+          <div class="design-row2">
+          <div>
+            <img
+              src="/desing3.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          <div>
+            <img
+              src="/desing3.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          <div>
+            <img
+              src="/desing4.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          <div>
+            <img
+              src="/desing4.jpeg"
+              alt="work in progress"
+              title="coming soon"
+            />
+          </div>
+          </div>
+        </section>
+      </section>
+      <hr />
+      <section class="fourthsection" id="contact">
+        <h1>Contact Me</h1>
+        <div class="contactsection">
+          <div class="overlay-2">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form-left">
+              <h1>Get In Touch</h1>
+              <hr />
+              <input type="hidden" name="access_key" value="d521d50b-9727-4d99-8c78-fc2415f41091">
+              <input
+                type="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                class="contact-input"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                class="contact-input"
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                class="contact-input"
+                required
+              ></textarea>
+              <button type="submit">
+                Let's Talk<img
+                  src="/send_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="contact-form-right">
+            <p><span id="element-3"></span></p>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+
+    <footer>
+      <div class="footer" id="footer">
+        <div class="footer-first">
+          <span class="black-plakato">Harshit's Portfolio</span>
+          <p>
+            A blend of code, creativity, and curiosity — building ideas that
+            inspire and designs that speak.
+          </p>
+        </div>
+        <div class="footer-second">
+          <span class="plakato-inline">Sections</span>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="#Designs">Designs</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <div
+            class="badge-base LI-profile-badge"
+            data-locale="en_US"
+            data-size="medium"
+            data-theme="light"
+            data-type="VERTICAL"
+            data-vanity="harshit-verma-741863309"
+            data-version="v1"
+          ></div>
+        </div>
+        <div class="footer-fourth">
+          <div class="image-wrapper-footer">
+            <img src="/Adobe Express 2025-08-16 16.13.19.png" alt="">
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text-rights">
+        <p>
+          Copyright ©2025 | Developed by Harshit Verma <a href="/">Portfolio</a>
+        </p>
+        <div class="social-media-links">
+          <ul>
+            <li>
+              <a href="https://github.com/harsxitvrma"
+                ><img src="icons8-github-logo.svg" alt="" class="social-media"
+              /></a>
+            </li>
+            <li>
+              <a href="https://in.pinterest.com/harsxitvrma/"
+                ><img src="/icons8-pinterest.svg" alt="" class="social-media"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/harsxitvrma/"
+                ><img src="/icons8-instagram.svg" alt="" class="social-media"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/harshit-verma-741863309/"
+                ><img
+                  src="/icons8-linkedin-circled.svg"
+                  alt=""
+                  class="social-media"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Designer", "Developer", "Graphic Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      let hasTyped = false;
+
+      const target = document.querySelector("#element-2");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !hasTyped) {
+              new Typed("#element-2", {
+                strings: ["✎Let’s build something amazing together!"],
+                typeSpeed: 50,
+              });
+              hasTyped = true;
+              observer.unobserve(target); // stop observing after it triggers
+            }
+          });
+        },
+        {
+          threshold: 0.5, // adjust based on how much of the element should be visible
+        }
+      );
+
+      observer.observe(target);
+    </script>
+
+    <script>
+      let hasTyped2 = false;
+
+      const target2 = document.querySelector("#element-3");
+
+      const observer2 = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !hasTyped2) {
+              new Typed("#element-3", {
+                strings: [
+                  "✎“Have a project in mind or just want to say hi? I’d love to hear from you.”",
+                ],
+                typeSpeed: 50,
+              });
+              hasTyped2 = true;
+              observer2.unobserve(target2); // stop observing after it triggers
+            }
+          });
+        },
+        {
+          threshold: 0.5, // adjust based on how much of the element should be visible
+        }
+      );
+
+      observer2.observe(target2);
+    </script>
+  </body>
+</html>

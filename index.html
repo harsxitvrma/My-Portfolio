@@ -99,7 +99,7 @@
 
       .footer {
         display: flex;
-        padding: 15px;
+        padding: 10px;
         justify-content: space-evenly;
         color: black;
       }
@@ -119,6 +119,11 @@
 
       .footer-second {
         width: 20vw;
+      }
+
+      .footer-third {
+        width: 15.5vw;
+        margin: 0px;
       }
 
       .footer .footer-second a {
@@ -154,16 +159,6 @@
       .footer-text-rights ul li {
         list-style: none;
         width: 70px;
-      }
-
-      .footer-fourth {
-        align-items: top;
-      }
-
-      .footer-fourth .image-wrapper-footer img {
-        width: 15vw;
-        height: auto;
-
       }
 
       .social-media {
@@ -265,9 +260,9 @@
       }
 
       .aboutleftsection {
-        width: 33%;
-        margin: 23px;
-        padding: 20px;
+        width: 50%;
+        margin: 41px;
+        padding: 1px;
       }
 
       .aboutleftsection img {
@@ -299,7 +294,7 @@
       .thirdsection {
         text-align: center;
         align-items: center;
-        margin: 115px 50px 140px;
+        margin: 0px 50px 0px;
         height: auto;
       }
 
@@ -407,17 +402,20 @@
       .project-content {
         color: white;
         padding: 20px;
-        font-size: clamp(12px, 2.5vw, 18px);
         opacity: 0;
         transition: opacity 0.4s ease;
         word-wrap: break-word;
         text-align: center;
       }
 
+      .project-content p{
+        padding: 5px;
+      }
+
       .project-content h2 {
         font-family: "plakato-pro", sans-serif;
         font-weight: normal;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .overlay {
@@ -663,8 +661,8 @@
           overflow: scroll;
         }
 
-        .contactsection {
-          margin: 23px 78px;
+        .fourthsection h1 {
+          font-size: 2.5rem;
         }
 
         .overlay-2 {
@@ -680,9 +678,68 @@
         .contact-form-right {
           display: none;
         }
+
+        .aboutrightsection p{
+          width: fit-content;
+          height: auto;
+          font-size: 1rem;
+        }
+        .aboutrightsection h1{
+          width: fit-content;
+          height: auto;
+          font-size: 2rem;
+        }
+
+        .secondsection {
+          margin: 50px 10px;
+        }
+
+        .fourthsection {
+          margin: 50px 10px;
+        }
+
+        #element-2 {
+          font-size: 1.5rem;
+        }
+
+        #element-3 {
+          font-size: 1.5rem;
+        }
+
+        #element {
+          font-size: 2rem;
+        }
+
+        .leftsection {
+          font-size: 2rem;
+        }
+
+        .leftsection span {
+          font-size: 2.5rem;
+        }
+
+        .footer-text-rights {
+          font-size: 1rem;
+        }
+
+        .footer-text-rights ul li{
+          width: 50px;
+        }
+
+        .social-media {
+          height: 30px;
+          padding: 10px;
+          margin: 0px;
+        }
+
       }
 
       @media screen and (max-width: 1199px) {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
         .overlay {
           overflow: scroll;
         }
@@ -761,11 +818,14 @@
         }
 
         .footer-third {
-          width: auto;
-          margin-right: 20px;
+          display: none;
         }
 
         .footer .footer-fourth {
+          display: none;
+        }
+
+        .fourthsection .contact-form-right {
           display: none;
         }
       }
@@ -783,7 +843,7 @@
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Projects">Projects</a></li>
-            <li><a href="/">Services</a></li>
+            <li><a href="https://hatshit-verma-designs.my.canva.site/">Art Gallery</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
@@ -793,10 +853,12 @@
     <main>
       <section class="firstsection" id="Home">
         <div class="leftsection">
+          <div>
           <div class="text-gray">Hi, My name is</div>
           <span class="plakato">Harshit</span>
           <div class="text-gray">I am a creative</div>
           <span id="element"></span>
+          </div>
           <div class="buttons">
             <button class="btn" onclick="window.location.href='/'">
               <i class="fa fa-download"></i>Resume
@@ -953,71 +1015,7 @@
             </div>
           </div>
         </section>
-        <h1>Designs</h1>
-        <section class="designsection" id="Designs">
-          <div class="design-row1">
-          <div>
-            <img
-              src="/desing1.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          <div>
-            <img
-              src="/desing1.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          <div>
-            <img
-              src="/desing2.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          <div>
-            <img
-              src="/desing2.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          </div>
-          <div class="design-row2">
-          <div>
-            <img
-              src="/desing3.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          <div>
-            <img
-              src="/desing3.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          <div>
-            <img
-              src="/desing4.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          <div>
-            <img
-              src="/desing4.jpeg"
-              alt="work in progress"
-              title="coming soon"
-            />
-          </div>
-          </div>
-        </section>
-      </section>
-      <hr />
+        <hr>
       <section class="fourthsection" id="contact">
         <h1>Contact Me</h1>
         <div class="contactsection">
@@ -1076,7 +1074,7 @@
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Projects">Projects</a></li>
-            <li><a href="/">Services</a></li>
+            <li><a href="https://hatshit-verma-designs.my.canva.site/">Art Gallery</a></li>
             <li><a href="#Designs">Designs</a></li>
           </ul>
         </div>
@@ -1091,11 +1089,6 @@
             data-version="v1"
           ></div>
         </div>
-        <div class="footer-fourth">
-          <div class="image-wrapper-footer">
-            <img src="/Adobe Express 2025-08-16 16.13.19.png" alt="">
-          </div>
-          </div>
         </div>
       </div>
       <div class="footer-text-rights">

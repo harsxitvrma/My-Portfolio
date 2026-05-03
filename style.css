@@ -1,0 +1,860 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(23, 23, 23);
+  background: linear-gradient(to right, #434343, #000000);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url(/about-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(186, 187, 193);
+  font-size: 1.02rem;
+}
+
+.left {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 2rem;
+}
+
+#menu {
+  display: none;
+}
+
+.left label {
+  display: none;
+}
+
+main hr {
+  border: 0;
+  background-color: antiquewhite;
+  height: 1.5px;
+  margin: 50px 85px;
+}
+
+footer {
+  background-color: whitesmoke;
+}
+
+.menu {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 23px 0px;
+}
+
+.footer ul li {
+  padding: 10px;
+}
+
+.footer-first {
+  width: 20vw;
+}
+
+.footer-second {
+  width: 20vw;
+}
+
+.footer-third {
+  width: 15.5vw;
+  margin: 0px;
+}
+
+.footer .footer-second a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.footer .footer-second a:hover {
+  font-weight: 400;
+}
+
+footer .footer-text-rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url(/about-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-text-rights a {
+  color: white;
+}
+
+.footer-text-rights ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-text-rights ul li {
+  list-style: none;
+  width: 70px;
+}
+
+.social-media {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.social-media:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 6.5px rgba(255, 255, 255, 0.7);
+}
+
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 115px 0;
+}
+
+.firstsection > div {
+  width: 30%;
+}
+.leftsection {
+  font-size: 2.5rem;
+}
+
+.leftsection .buttons {
+  padding: 10px 0px;
+}
+
+.leftsection .btn {
+  font-size: 1.3rem;
+  padding: 25px;
+  width: auto;
+  margin: 5px 0px;
+  border: 2px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.leftsection .btn:hover {
+  transform: scale(1.02);
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.rightsection img {
+  width: 120%;
+  border-radius: 50px;
+  margin: 0px -28px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.rightsection img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.plakato {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 4rem;
+}
+
+.black-plakato {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+.text-gray {
+  color: rgb(196, 201, 201);
+}
+
+#element {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 4rem;
+}
+
+#element-2 {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 3rem;
+}
+
+#element-3 {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 3rem;
+}
+
+.secondsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 110px 10px;
+  max-width: 96vw;
+  height: auto;
+}
+
+.aboutleftsection {
+  width: 50%;
+  margin: 41px;
+  padding: 1px;
+}
+
+.aboutleftsection img {
+  width: 88%;
+  margin: -35px 28px;
+  border-radius: 50px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.aboutleftsection img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.aboutrightsection {
+  width: 110%;
+}
+
+.secondsection h1 {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.secondsection p {
+  font-size: 1.5rem;
+}
+
+.thirdsection {
+  text-align: center;
+  align-items: center;
+  margin: 0px 50px 0px;
+  height: auto;
+}
+
+.thirdsection h1 {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.projectsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 38px 0px;
+}
+
+.projectsection hr {
+  border: 0;
+  background-color: rgb(247, 241, 241);
+  height: 1.5px;
+  margin: 9px 23px;
+  box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+}
+
+.projectsection a {
+  color: white;
+}
+
+.projectsection ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.projectsection ul li {
+  list-style: none;
+}
+
+.left-project-section {
+  background-color: white;
+  box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+  width: 30%;
+  height: 40vw;
+  border-radius: 20px;
+  background-image: url(/30\ Building\ Drawing\ Ideas\ That\ You\ Needs\ to\ Try!\ 39.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.left-project-section:hover .project-content {
+  opacity: 1;
+}
+
+.left-project-section:hover .overlay {
+  opacity: 1;
+}
+
+.middle-project-section {
+  background-color: white;
+  box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+  width: 30%;
+  height: 40vw;
+  border-radius: 20px;
+  background-image: url(/30x\ Outrageously\ Creative_\ Weird\ Drawing\ Ideas\ 2024!\ 82.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.middle-project-section:hover .project-content {
+  opacity: 1;
+}
+
+.middle-project-section:hover .overlay {
+  opacity: 1;
+}
+
+.right-project-section {
+  background-color: white;
+  box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+  width: 30%;
+  height: 40vw;
+  border-radius: 20px;
+  background-image: url(/地圖肖像Map\ Portrait\ no_00514.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.right-project-section:hover .project-content {
+  opacity: 1;
+}
+.right-project-section:hover .overlay {
+  opacity: 1;
+}
+
+.project-content {
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.project-content p{
+  padding: 5px;
+}
+
+.project-content h2 {
+  font-family: "plakato-pro", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 20px;
+  height: 40vw;
+}
+
+.designsection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 38px 0px;
+}
+
+.design-row1{
+  display: flex;
+  margin: 10px;
+}
+
+.design-row2 {
+  display: flex;
+  margin: 10px;
+}
+
+.designsection div img {
+  width: 150px;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.designsection div img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+}
+
+.plakato-inline {
+  font-family: "plakato-inline-pro", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.fourthsection {
+  text-align: center;
+  margin: 115px;
+}
+
+.fourthsection h1 {
+  font-family: "plakato-pro", sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.contactsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+  height: auto;
+}
+
+.contactsection h1 {
+  font-family: "plakato-inline-pro", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+}
+
+.contactsection hr {
+  border: none;
+  height: 6px;
+  background: white;
+  width: 137px;
+  margin: -10px 0px 10px;
+  border-radius: 10px;
+}
+
+.contactsection textarea {
+  font-family: "Poppins", sans-serif;
+  height: 140px;
+  border-radius: 20px;
+  padding-top: 15px;
+}
+
+.overlay-2 {
+  background: rgba(128, 128, 128, 0.37);
+  box-shadow: 0 6px 20px rgba(210, 207, 207, 0.623);
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0px 50px;
+  padding: 23px;
+}
+
+.contactsection .contact-form-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.contact-input {
+  width: 400px;
+  height: 60px;
+  border: none;
+  outline: none;
+  color: rgb(58, 58, 58);
+  border-radius: 50px;
+  padding-left: 25px;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.contact-input:focus {
+  border: 2px solid rgb(255, 255, 255);
+  background: black;
+  color: white;
+}
+
+.contact-input::placeholder {
+  color: rgb(158, 153, 153);
+  font-size: medium;
+}
+
+.contact-form-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-form-left button:hover {
+  transform: scale(1.02);
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.contact-form-left img {
+  height: 30px;
+}
+
+.contact-form-right {
+  width: 40vw;
+  height: auto;
+  text-align: left;
+  align-items: center;
+}
+
+@media screen and (max-width: 765px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav .left{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  nav .left label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  nav .left label::before {
+    flex-direction: row;
+    position: absolute;
+    content: "menu";
+    font-family: "Material Icons";
+    top: 0;
+    left: 0;
+    font-size: 30px;
+  }
+
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    max-height:0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+  nav ul li {
+    width: 500%;
+    padding: 10px;
+    border-radius: 0;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.695);
+  }
+
+  #menu:checked ~ .right ul{
+    max-height: 500px;
+  }
+  #menu:checked ~ .left label::before {
+    content: "close";
+  }
+
+
+  .thirdsection .projectsection {
+    display: inline;
+  }
+
+  .left-project-section {
+    width: fit-content;
+    margin: 23px;
+  }
+
+  .right-project-section {
+    width: fit-content;
+    margin: 23px;
+  }
+
+  .middle-project-section {
+    width: fit-content;
+    margin: 23px;
+  }
+
+  .overlay {
+    overflow: scroll;
+  }
+
+  .fourthsection h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-2 {
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .contactsection {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactsection hr {
+    width: 110px;
+    margin: -6px 0 8px;
+  }
+
+  .contact-input {
+    width: 75vw;
+  }
+
+  .contact-form-right {
+    display: none;
+  }
+
+  .aboutrightsection p{
+    width: fit-content;
+    height: auto;
+    font-size: 1rem;
+  }
+  .aboutrightsection h1{
+    width: fit-content;
+    height: auto;
+    font-size: 2rem;
+  }
+
+  .secondsection {
+    margin: 50px 10px;
+  }
+
+  .fourthsection {
+    margin: 40px 10px;
+  }
+
+  #element-2 {
+    font-size: 1.5rem;
+    display: inline;
+  }
+
+  #element-3 {
+    font-size: 1.5rem;
+  }
+
+  #element {
+    font-size: 2rem;
+  }
+
+  .leftsection {
+    font-size: 2rem;
+  }
+
+  .leftsection span {
+    font-size: 2.5rem;
+  }
+  .leftsection #element,
+  .leftsection .typed-cursor {
+    display: inline;
+    width: auto;
+    vertical-align: baseline;
+  }
+
+  .footer-text-rights {
+    font-size: 1rem;
+  }
+
+  .footer-text-rights ul li{
+    width: 50px;
+  }
+
+  .social-media {
+    height: 30px;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  /* Keep hero taller on small (mobile) screens so About doesn't peek through */
+  .firstsection {
+    min-height: 85vh;
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+  * { margin: 0; padding: 0; }
+
+  nav { display: flex; flex-direction: column; height: auto; }
+
+  .overlay { overflow: auto; }
+
+  /* Make design rows stack and scale images */
+  .designsection { display: flex; flex-direction: column; align-items: center; margin: 0 0 0 -23px; }
+  .design-row1, .design-row2 { display: flex; }
+  .designsection div img { width: 90%; height: auto; margin: 23px; }
+
+  .aboutrightsection { width: fit-content; height: auto; padding: 10vw; }
+  .aboutrightsection h1 { font-size: 2.5rem; }
+  .aboutrightsection p { font-size: 1.2rem; }
+
+  .aboutleftsection { display: none; }
+  .aboutleftsection img { opacity: 0; }
+
+  /* Center all span-based text at this breakpoint */
+  span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Center the first section content on tablet and smaller screens */
+  .firstsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 60px 10px;
+    min-height: 75vh; /* ensure hero stays tall on tablets */
+  }
+  .firstsection > div { width: 100%; max-width: 900px; }
+  .leftsection { margin: 0 auto; width: 100%; text-align: center; }
+  .rightsection { display: none; }
+  .leftsection span,
+  .aboutrightsection span,
+  .contactsection span,
+  .footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .leftsection #element,
+  .leftsection #element-2,
+  .leftsection .typed-cursor {
+    display: inline;
+    width: auto;
+    vertical-align: baseline;
+  }
+
+  /* Ensure hero image (profile) is visible and sized appropriately on small screens */
+  .rightsection {
+    display: block;
+    width: 80%;
+    margin: 18px auto 0;
+    text-align: center;
+  }
+  .rightsection img, .profile-pic {
+    width: 60%;
+    height: auto;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  /* Buttons: place Resume and Github side-by-side with equal size */
+  .leftsection .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px; 
+    margin: 0 auto;
+  }
+  .leftsection .buttons .btn {
+    margin: 0;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 75px;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  /* Ensure anchors inside the buttons container also size equally */
+  .leftsection .buttons > * {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftsection .buttons a { display: flex; text-decoration: none; }
+  .leftsection .buttons a .btn { width: 100%; }
+
+  .contactsection {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+  }
+
+  .overlay-2 {
+    width: 88vw;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .contactsection hr {
+    width: 100px;
+    margin: -6px 0 8px;
+  }
+
+  .footer { display: flex; justify-content: space-between; overflow: hidden; }
+  .footer-first { width: auto; }
+  .footer .footer-second, .footer-third, .footer .footer-fourth { display: none; }
+  .fourthsection .contact-form-right { display: none; }
+}

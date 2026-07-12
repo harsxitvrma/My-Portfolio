@@ -82,7 +82,7 @@
     display:flex; align-items:center; gap:8px;
   }
   .logo .dot-live{width:9px; height:9px; border-radius:50%; background:var(--coral); display:inline-block;}
-  .nav-right{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .nav-right{display:flex; align-items:center; gap:10px; flex-wrap:wrap; position:relative;}
   .tabs{display:flex; gap:6px; flex-wrap:wrap;}
   .tab{
     font-family:var(--font-mono); font-size:0.82rem; font-weight:500;
@@ -102,6 +102,45 @@
   .theme-btn .material-symbols-outlined{
     font-size:20px; color:var(--ink);
     font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 20;
+  }
+  .menu-btn{
+    width:38px; height:38px; border-radius:10px;
+    border:2px solid var(--line); background:var(--paper-dim);
+    cursor:pointer; display:none; align-items:center; justify-content:center;
+    flex-direction:column; gap:4px; padding:0;
+    transition:transform 0.2s ease, background 0.2s ease;
+  }
+  .menu-btn:hover{transform:translateY(-1px); background:var(--yellow);}
+  .menu-btn span{
+    display:block; width:16px; height:2px; border-radius:999px; background:var(--ink);
+    transition:transform 0.2s ease, opacity 0.2s ease, width 0.2s ease;
+  }
+  .nav.open .menu-btn span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .nav.open .menu-btn span:nth-child(2){opacity:0; width:0;}
+  .nav.open .menu-btn span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+  .mobile-menu{
+    position:absolute; top:calc(100% + 12px); right:28px;
+    min-width:220px; padding:10px;
+    border:2px solid var(--line); border-radius:14px;
+    background:var(--paper);
+    box-shadow:6px 6px 0 var(--shadow);
+    z-index:60;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px) scale(0.98);
+    max-height:0;
+    overflow:hidden;
+    pointer-events:none;
+    transition:opacity 0.22s ease, transform 0.22s ease, max-height 0.22s ease, visibility 0.22s ease;
+  }
+  .mobile-menu .tab{display:block; border-radius:10px; top:0; border-bottom:2px solid var(--line);}
+  .mobile-menu .tab + .tab{margin-top:8px;}
+  .nav.open .mobile-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0) scale(1);
+    max-height:320px;
+    pointer-events:auto;
   }
 
   .hero{
@@ -451,10 +490,14 @@
     .hero-tags, .hero-ctas{justify-content:center;}
     .avatar-wrap{width:230px; height:230px;}
     .avatar-wrap{margin-top:10px;}
+    .tabs{display:none;}
+    .menu-btn{display:inline-flex;}
+    .mobile-menu{right:0; left:auto;}
   }
   @media (max-width:640px){
     .hero{padding:56px 0 40px;}
     section{padding:46px 0;}
+    .nav-inner{padding:12px 18px;}
   }
 </style>
 </head>
@@ -470,9 +513,18 @@
         <a class="tab" href="#design">design/</a>
         <a class="tab" href="#contact">contact.sh</a>
       </div>
+      <button class="menu-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
       <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle light / dark mode">
         <span class="material-symbols-outlined">dark_mode</span>
       </button>
+      <div class="mobile-menu" id="mobileMenu">
+        <a class="tab" href="#about">about.md</a>
+        <a class="tab" href="#projects">projects/</a>
+        <a class="tab" href="#design">design/</a>
+        <a class="tab" href="#contact">contact.sh</a>
+      </div>
     </div>
   </div>
 </nav>
@@ -705,8 +757,16 @@
 
 <script>
   const root = document.documentElement;
+  const nav = document.querySelector('.nav');
   const themeBtn = document.getElementById('themeToggle');
   const themeIcon = themeBtn.querySelector('.material-symbols-outlined');
+  const menuBtn = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function setMenuOpen(open){
+    nav.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+  }
 
   function applyTheme(t){
     root.setAttribute('data-theme', t);
@@ -721,6 +781,18 @@
 
   themeBtn.addEventListener('click', () => {
     applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  menuBtn.addEventListener('click', () => {
+    setMenuOpen(!nav.classList.contains('open'));
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => setMenuOpen(false));
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.contains(event.target)) setMenuOpen(false);
   });
 </script>
 
